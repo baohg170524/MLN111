@@ -843,3 +843,489 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #c0392b;
 }
+
+/* New Sections Styles */
+
+/* CSHT Role Section */
+.csht-role {
+    margin: 3rem 0;
+}
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.role-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.role-item i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.role-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* KTTT Interaction Section */
+.kttt-interaction {
+    margin: 3rem 0;
+}
+
+.interaction-content {
+    margin-top: 2rem;
+}
+
+.interaction-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.interaction-functions {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.interaction-functions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interaction-functions li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.interaction-functions li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.interaction-directions {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.direction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.direction-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.direction-item.positive {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+}
+
+.direction-item.negative {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.direction-item:hover {
+    transform: scale(1.05);
+}
+
+.direction-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* State Role Section */
+.state-role {
+    margin: 3rem 0;
+}
+
+.state-content {
+    margin-top: 2rem;
+}
+
+.state-power, .state-influence {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.state-power ul {
+    list-style: none;
+    padding: 0;
+}
+
+.state-power li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.state-power li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.influence-directions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.influence-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.influence-item.positive {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.influence-item.negative {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+}
+
+.influence-item:hover {
+    transform: scale(1.05);
+}
+
+.influence-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Socialism Section */
+.socialism {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5rem 0;
+}
+
+.socialism-content {
+    margin-top: 3rem;
+}
+
+.socialism-formation, .transition-period, .developed-socialism {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.formation-process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.step-icon {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.step-icon i {
+    font-size: 1.5rem;
+}
+
+.step-content h4 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.transition-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.developed-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.developed-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.developed-item h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.developed-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.developed-item li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.developed-item li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #f39c12;
+}
+
+/* Practical Meaning Section */
+.practical {
+    background: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.practical-content {
+    margin-top: 3rem;
+}
+
+.scientific-basis, .common-mistakes, .vietnam-renovation {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.basis-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.basis-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.basis-item:hover {
+    transform: translateY(-5px);
+}
+
+.basis-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mistakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mistake-item {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mistake-item:hover {
+    transform: translateY(-5px);
+}
+
+.mistake-item.negative {
+    background: linear-gradient(135deg, #ff7675, #d63031);
+    color: white;
+}
+
+.mistake-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mistake-icon i {
+    font-size: 2.5rem;
+}
+
+.mistake-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.mistake-content li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.mistake-content li:before {
+    content: "⚠";
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+.renovation-content {
+    margin-top: 2rem;
+}
+
+.renovation-principle {
+    background: linear-gradient(135deg, #00b894, #00a085);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.renovation-approach {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.approach-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.approach-item:hover {
+    transform: translateY(-5px);
+}
+
+.approach-item i {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.renovation-goals {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+}
+
+.renovation-goals ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.renovation-goals li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.renovation-goals li:before {
+    content: "🎯";
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .role-grid,
+    .direction-grid,
+    .influence-directions,
+    .formation-process,
+    .transition-features,
+    .developed-features,
+    .basis-content,
+    .mistakes-grid,
+    .renovation-approach {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mistake-item,
+    .basis-item,
+    .approach-item {
+        padding: 1.5rem;
+    }
+}
