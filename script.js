@@ -40,6 +40,15 @@ window.addEventListener('scroll', () => {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.boxShadow = 'none';
     }
+
+    // Reading progress update
+    const progress = document.getElementById('readingProgress');
+    if (progress) {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const width = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progress.style.width = width + '%';
+    }
 });
 
 // Intersection Observer for animations

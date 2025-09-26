@@ -678,6 +678,19 @@ body {
     opacity: 0.8;
 }
 
+/* Reading Progress Bar */
+.reading-progress {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+    z-index: 1001;
+    box-shadow: 0 2px 6px rgba(231, 76, 60, 0.3);
+    transition: width 0.1s linear;
+}
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
