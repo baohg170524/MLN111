@@ -271,3 +271,21 @@ chủ nghĩa Mác-Lênin.
 'color: #27ae60; font-size: 12px;',
 'color: #f39c12; font-size: 12px; font-weight: bold;'
 );
+
+// Back to Top: show/hide on scroll and smooth scroll to top
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (!backToTopBtn) return;
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
