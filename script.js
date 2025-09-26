@@ -281,6 +281,38 @@ chủ nghĩa Mác-Lênin.
 'color: #f39c12; font-size: 12px; font-weight: bold;'
 );
 
+// Scrollspy: highlight current section in nav
+(function initScrollspy(){
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    if (!sections.length || !navLinks.length) return;
+
+    function onScrollSpy() {
+        let currentId = '';
+        const offset = 80; // height of fixed navbar
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const top = rect.top - offset;
+            if (top <= 0 && rect.bottom - offset > 0) {
+                currentId = section.id;
+            }
+        });
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const id = href.startsWith('#') ? href.substring(1) : '';
+            if (id === currentId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', onScrollSpy, { passive: true });
+    document.addEventListener('DOMContentLoaded', onScrollSpy);
+    onScrollSpy();
+})();
+
 // Back to Top: show/hide on scroll and smooth scroll to top
 const backToTopBtn = document.getElementById('backToTop');
 

@@ -90,6 +90,15 @@ body {
     width: 100%;
 }
 
+/* Active nav link (scrollspy) */
+.nav-link.active {
+    color: #e74c3c;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
